@@ -1,13 +1,8 @@
-function findAccountById(accounts, id) {
+function findAccountById(accounts, id){
   let result = {};
-  for (let i = 0; i < accounts.length; i++){
-    const account = accounts[i];
-    if (account.id === id){
-     result = account
-    }
-  }
+  result = accounts.find((account) => account.id === id)
   return result
- }
+}
 
 
 
